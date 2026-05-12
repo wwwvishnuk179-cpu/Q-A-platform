@@ -1,0 +1,32 @@
+.all{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-image: url("https://www.enterpriseitworld.com/wp-content/uploads/2020/05/image1-13.jpg");
+}
+.main-2{
+    background-color: rgba(8, 244, 189, 0.389);
+    width: 900px;
+    height: 700px;
+    margin: auto;
+    border-radius: 20px;
+      display: flex;
+    justify-content: center;
+    
+}
+.subject{
+    background-image: url("https://www.enterpriseitworld.com/wp-content/uploads/2020/05/image1-13.jpg");
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    color: aliceblue;
+    padding: 30px;
+}
+.Login{
+   margin-left: 200px;
+   display: flex;
+  
+}

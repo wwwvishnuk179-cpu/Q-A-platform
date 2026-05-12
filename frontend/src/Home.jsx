@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Home.css'
+import Notification from './Notification'
 function Home() {
+    const [project,setproject]= useState({})
+    const [showNotif,setShowNotif] = useState(false)
     return (
         <div>
             <div className='heading'>
@@ -17,7 +20,9 @@ function Home() {
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div className='btn'>
-                                <button style={{ borderRadius: '10px' }}><i class="bi bi-bell-fill"></i></button>
+                                <button onClick={()=>{setShowNotif(!showNotif)}} style={{ borderRadius: '10px' }}><i class="bi bi-bell-fill"></i></button>
+                            {showNotif&&<Notification className="position-absolute end-0"/>}
+
                             </div>
                         </div><br />
                     </nav>
